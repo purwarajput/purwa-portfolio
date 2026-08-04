@@ -4,15 +4,16 @@
 
 }
 
-.case-hero .container{
+.case-container{
 
     max-width:1300px;
 
-    margin:auto;
+    margin:0 auto;
 
     padding:0 20px;
 
 }
+
 
 .hero-content{
 
@@ -25,7 +26,8 @@
     align-items:center;
 
 }
-.back-btn{
+
+ .back-btn{
     display:inline-flex;
     align-items:center;
     gap:8px;
@@ -34,7 +36,7 @@
     font-size:1rem;
     margin-bottom:40px;
     transition:.3s;
-}
+} 
 
 .back-btn:hover{
     color:#6C63FF;
