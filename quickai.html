@@ -663,147 +663,120 @@
 
 
 
-    <section class="architecture-section">
+   <section class="architecture-section reveal">
 
-        <div class="case-container">
+    <div class="case-container">
 
-            <span class="section-tag">
-                SYSTEM ARCHITECTURE
-            </span>
+        <span class="section-tag">
+            SYSTEM ARCHITECTURE
+        </span>
 
-            <h2 class="section-title">
-                Enterprise Architecture
-            </h2>
+        <h2 class="section-title">
+            How QuickAI Works
+        </h2>
 
-            <p class="section-subtitle">
-                ClaimCore follows a layered architecture that separates presentation,
-                business logic, authentication, database access, and third-party services
-                for scalability and maintainability.
-            </p>
+        <p class="section-subtitle">
+            QuickAI follows a modern full-stack architecture combining secure
+            authentication, scalable backend services, PostgreSQL database,
+            and Gemini AI to deliver multiple productivity tools through a
+            unified platform.
+        </p>
 
-            <div class="architecture-diagram">
+        <div class="architecture-tree">
 
-                <!-- USER -->
+            <!-- USER -->
 
-                <div class="arch-row">
+            <div class="arch-node">
 
-                    <div class="arch-card reveal" data-delay="0">
+                <i data-lucide="user-round"></i>
 
-                        <i data-lucide="user"></i>
+                <h3>User</h3>
 
-                        <h3>User</h3>
+            </div>
 
-                    </div>
+            <div class="vertical-line"></div>
 
-                </div>
+            <!-- AUTH -->
 
-                <div class="arch-line"></div>
+            <div class="arch-node">
 
-                <!-- FRONTEND -->
+                <i data-lucide="shield-check"></i>
 
-                <div class="arch-row">
+                <h3>Clerk Authentication</h3>
 
-                    <div class="arch-card reveal" data-delay="100">
+            </div>
 
-                        <i data-lucide="monitor-smartphone"></i>
+            <div class="vertical-line"></div>
 
-                        <h3>Angular Frontend</h3>
+            <!-- FRONTEND -->
 
-                    </div>
+            <div class="arch-node large">
 
-                </div>
+                <i data-lucide="monitor-smartphone"></i>
 
-                <div class="arch-line"></div>
+                <h3>React Application</h3>
 
-                <!-- SERVICES -->
+            </div>
 
-                <div class="arch-services">
+            <div class="vertical-line"></div>
 
-                    <div class="arch-card small reveal" data-delay="200">
+            <!-- SERVICES -->
 
-                        <i data-lucide="shield-check"></i>
+            <div class="services-row">
 
-                        <h3>JWT Auth</h3>
+                <div class="arch-node">
 
-                    </div>
+                    <i data-lucide="server"></i>
 
-                    <div class="arch-card small reveal" data-delay="300">
-
-                        <i data-lucide="mail"></i>
-
-                        <h3>Email Service</h3>
-
-                    </div>
+                    <h3>Express.js API</h3>
 
                 </div>
 
-                <div class="arch-line"></div>
+                <div class="arch-node">
 
-                <!-- BACKEND -->
+                    <i data-lucide="database"></i>
 
-                <div class="arch-row">
-
-                    <div class="arch-card reveal" data-delay="400">
-
-                        <i data-lucide="server-cog"></i>
-
-                        <h3>.NET REST APIs</h3>
-
-                    </div>
+                    <h3>PostgreSQL</h3>
 
                 </div>
 
-                <div class="arch-line"></div>
+            </div>
 
-                <!-- EF -->
+            <div class="vertical-line short"></div>
 
-                <div class="arch-row">
+            <!-- AI TOOLS -->
 
-                    <div class="arch-card reveal" data-delay="500">
+            <div class="models-row">
 
-                        <i data-lucide="layers"></i>
+                <div class="arch-node small">
 
-                        <h3>Entity Framework</h3>
+                    <i data-lucide="sparkles"></i>
 
-                    </div>
-
-                </div>
-
-                <div class="arch-line"></div>
-
-                <!-- DATABASE -->
-
-                <div class="arch-row">
-
-                    <div class="arch-card reveal" data-delay="600">
-
-                        <i data-lucide="database"></i>
-
-                        <h3>SQL Server</h3>
-
-                    </div>
+                    <h3>AI Writer</h3>
 
                 </div>
 
-                <!-- BOTTOM -->
+                <div class="arch-node small">
 
-                <div class="arch-bottom">
+                    <i data-lucide="image"></i>
 
-                    <div class="arch-card small reveal" data-delay="700">
+                    <h3>Image Generator</h3>
 
-                        <i data-lucide="credit-card"></i>
+                </div>
 
-                        <h3>Razorpay</h3>
+                <div class="arch-node small">
 
-                    </div>
+                    <i data-lucide="scan-face"></i>
 
-                    <div class="arch-card small reveal" data-delay="800">
+                    <h3>Background Removal</h3>
 
-                        <i data-lucide="users-round"></i>
+                </div>
 
-                        <h3>Admin Portal</h3>
+                <div class="arch-node small">
 
-                    </div>
+                    <i data-lucide="file-search"></i>
+
+                    <h3>Resume Review</h3>
 
                 </div>
 
@@ -811,7 +784,9 @@
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
     <section class="tech-section">
 
