@@ -48,3 +48,85 @@ document.querySelectorAll(".showcase-card").forEach(card=>{
     });
 
 });
+
+/*=================================
+        METRIC COUNTERS
+=================================*/
+
+const counters = document.querySelectorAll(".counter");
+
+const counterObserver = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(!entry.isIntersecting) return;
+
+        const counter = entry.target;
+
+        const target = +counter.dataset.target;
+
+        let current = 0;
+
+        const increment = target / 60;
+
+        const update = ()=>{
+
+            current += increment;
+
+            if(current < target){
+
+                counter.innerText = Math.ceil(current);
+
+                requestAnimationFrame(update);
+
+            }else{
+
+                if(target === 100){
+
+                    counter.innerText = "100%";
+
+                }
+
+                else if(target === 25){
+
+                    counter.innerText = "25+";
+
+                }
+
+                else if(target === 10){
+
+                    counter.innerText = "10+";
+
+                }
+
+                else if(target === 5){
+
+                    counter.innerText = "5+";
+
+                }
+
+                else{
+
+                    counter.innerText = target;
+
+                }
+
+            }
+
+        };
+
+        update();
+
+        counterObserver.unobserve(counter);
+
+    });
+
+},{
+    threshold:.5
+});
+
+counters.forEach(counter=>{
+
+    counterObserver.observe(counter);
+
+});
