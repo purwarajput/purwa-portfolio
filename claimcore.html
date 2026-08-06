@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/responsive.css">
 
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 
 <body>
@@ -69,7 +74,9 @@
                        target="_blank"
                        class="primary-btn">
 
-                        🌐 Live Demo
+                       <i data-lucide="external-link"></i>
+
+                    Live Demo
 
                     </a>
 
@@ -77,15 +84,17 @@
                        target="_blank"
                        class="secondary-btn">
 
-                        🐙 GitHub
+                       <i class="fa-brands fa-github"></i>
+                        GitHub
 
                     </a>
 
                     <button
                         class="secondary-btn gallery-open"
                         data-project="claimcore">
+                         <i data-lucide="gallery-horizontal"></i>
 
-                        🖼 Open Gallery
+                        Open Gallery
 
                     </button>
 
@@ -174,7 +183,9 @@
         <div class="workflow">
 
             <div class="workflow-step">
-                <div class="step-icon">👤</div>
+                <div class="step-icon">
+    <i data-lucide="user"></i>
+</div>
                 <h3>Register</h3>
                 <p>Create account securely</p>
             </div>
@@ -182,7 +193,9 @@
             <div class="workflow-arrow">↓</div>
 
             <div class="workflow-step">
-                <div class="step-icon">📄</div>
+                <div class="step-icon">
+    <i data-lucide="file-text"></i>
+</div>
                 <h3>KYC Upload</h3>
                 <p>Upload documents</p>
             </div>
@@ -190,7 +203,9 @@
             <div class="workflow-arrow">↓</div>
 
             <div class="workflow-step">
-                <div class="step-icon">🛡</div>
+                <div class="step-icon">
+    <i data-lucide="shield-check"></i>
+</div>
                 <h3>Verification</h3>
                 <p>Admin approval</p>
             </div>
@@ -198,7 +213,9 @@
             <div class="workflow-arrow">↓</div>
 
             <div class="workflow-step">
-                <div class="step-icon">💳</div>
+                <div class="step-icon">
+    <i data-lucide="credit-card"></i>
+</div>
                 <h3>Payment</h3>
                 <p>Premium payment</p>
             </div>
@@ -206,7 +223,9 @@
             <div class="workflow-arrow">↓</div>
 
             <div class="workflow-step">
-                <div class="step-icon">📝</div>
+                <div class="step-icon">
+    <i data-lucide="file-pen-line"></i>
+</div>
                 <h3>Claim</h3>
                 <p>Submit insurance claim</p>
             </div>
@@ -214,7 +233,9 @@
             <div class="workflow-arrow">↓</div>
 
             <div class="workflow-step">
-                <div class="step-icon">✅</div>
+                <div class="step-icon">
+    <i data-lucide="badge-check"></i>
+</div>
                 <h3>Approved</h3>
                 <p>Track claim status</p>
             </div>
@@ -248,7 +269,9 @@
 
             <div class="feature-card">
 
-                <div class="feature-icon">🔐</div>
+                <div class="feature-icon">
+    <i data-lucide="shield-check"></i>
+</div>
 
                 <h3>JWT Authentication</h3>
 
@@ -270,7 +293,9 @@
 
             <div class="feature-card">
 
-                <div class="feature-icon">🪪</div>
+                <div class="feature-icon">
+    <i data-lucide="id-card"></i>
+</div>
 
                 <h3>KYC Verification</h3>
 
@@ -292,7 +317,9 @@
 
             <div class="feature-card">
 
-                <div class="feature-icon">💳</div>
+                <div class="feature-icon">
+    <i data-lucide="credit-card"></i>
+</div>
 
                 <h3>Premium Payments</h3>
 
@@ -314,7 +341,9 @@
 
             <div class="feature-card">
 
-                <div class="feature-icon">📑</div>
+                <div class="feature-icon">
+    <i data-lucide="file-text"></i>
+</div>
 
                 <h3>Claims Management</h3>
 
@@ -336,7 +365,9 @@
 
             <div class="feature-card">
 
-                <div class="feature-icon">📊</div>
+               <div class="feature-icon">
+    <i data-lucide="layout-dashboard"></i>
+</div>
 
                 <h3>Analytics Dashboard</h3>
 
@@ -358,7 +389,9 @@
 
             <div class="feature-card">
 
-                <div class="feature-icon">👨‍💼</div>
+                <div class="feature-icon">
+    <i data-lucide="users-round"></i>
+</div>
 
                 <h3>Admin Dashboard</h3>
 
@@ -399,6 +432,10 @@
 <section class="case-footer"></section>
 
 <script src="js/case-study.js"></script>
+
+<script>
+    lucide.createIcons();
+</script>
 
 </body>
 
