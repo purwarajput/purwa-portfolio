@@ -39,6 +39,8 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <script src="https://unpkg.com/lucide@latest"></script>
+
     <!-- ==================== Custom CSS ==================== -->
 
     <link rel="stylesheet" href="css/style.css">
@@ -1057,7 +1059,7 @@
                                     <span>Node.js</span>
                                     <span>PostgreSQL</span>
                                     <span>OpenRouter</span>
-                                    
+
 
                                 </div>
 
@@ -1300,21 +1302,42 @@
 
             <button class="gallery-close">&times;</button>
 
-            <button class="gallery-nav gallery-prev">&#10094;</button>
+            <button class="gallery-nav gallery-prev">
+
+                <i data-lucide="chevron-left"></i>
+
+            </button>
 
             <div class="gallery-main">
 
-                <img id="galleryImage" src="" alt="Project Screenshot">
+                <!-- <img id="galleryImage" src="" alt="Project Screenshot"> -->
 
+                <div class="gallery-image-wrapper">
+
+                    <img id="galleryImage">
+
+                </div>
             </div>
 
-            <button class="gallery-nav gallery-next">&#10095;</button>
+            <button class="gallery-nav gallery-next">
+
+                <i data-lucide="chevron-right"></i>
+
+            </button>
 
             <div class="gallery-footer">
 
-                <div id="galleryCounter"></div>
+                <div class="gallery-progress">
 
-                <div id="galleryThumbnails" class="gallery-thumbnails"></div>
+                    <div class="gallery-progress-fill"></div>
+
+                </div>
+
+                <div id="galleryCounter" class="gallery-counter"></div>
+
+                <div id="galleryThumbnails" class="gallery-thumbnails">
+
+                </div>
 
             </div>
 
@@ -1331,6 +1354,10 @@
     <script src="js/app.js"></script>
 
     <script src="js/projects.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
 
     <!-- ================= Gallery Modal ================= -->
 
