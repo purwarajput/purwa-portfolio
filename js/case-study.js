@@ -22,28 +22,28 @@ const observer = new IntersectionObserver((entries) => {
 
 reveals.forEach(card => observer.observe(card));
 
-document.querySelectorAll(".showcase-card").forEach(card=>{
+document.querySelectorAll(".showcase-card").forEach(card => {
 
-    const browser=card.querySelector(".browser-frame");
+    const browser = card.querySelector(".browser-frame");
 
-    card.addEventListener("mousemove",(e)=>{
+    card.addEventListener("mousemove", (e) => {
 
-        const rect=card.getBoundingClientRect();
+        const rect = card.getBoundingClientRect();
 
-        const x=(e.clientX-rect.left)/rect.width-.5;
-        const y=(e.clientY-rect.top)/rect.height-.5;
+        const x = (e.clientX - rect.left) / rect.width - .5;
+        const y = (e.clientY - rect.top) / rect.height - .5;
 
-        browser.style.transform=
-        `perspective(1200px)
-         rotateY(${x*8}deg)
-         rotateX(${-y*8}deg)
+        browser.style.transform =
+            `perspective(1200px)
+         rotateY(${x * 8}deg)
+         rotateX(${-y * 8}deg)
          translateY(-8px)`;
 
     });
 
-    card.addEventListener("mouseleave",()=>{
+    card.addEventListener("mouseleave", () => {
 
-        browser.style.transform="";
+        browser.style.transform = "";
 
     });
 
@@ -55,11 +55,11 @@ document.querySelectorAll(".showcase-card").forEach(card=>{
 
 const counters = document.querySelectorAll(".counter");
 
-const counterObserver = new IntersectionObserver((entries)=>{
+const counterObserver = new IntersectionObserver((entries) => {
 
-    entries.forEach(entry=>{
+    entries.forEach(entry => {
 
-        if(!entry.isIntersecting) return;
+        if (!entry.isIntersecting) return;
 
         const counter = entry.target;
 
@@ -69,49 +69,39 @@ const counterObserver = new IntersectionObserver((entries)=>{
 
         const increment = target / 60;
 
-        const update = ()=>{
+        const update = () => {
 
             current += increment;
 
-            if(current < target){
+            if (current < target) {
 
                 counter.innerText = Math.ceil(current);
 
                 requestAnimationFrame(update);
 
-            }else{
+            } else {
 
-                if(target === 100){
+                if (target === 100) {
 
                     counter.innerText = "100%";
 
                 }
 
-                else if(target === 25){
+                else if (target > 1 && target < 100) {
 
-                    counter.innerText = "25+";
-
-                }
-
-                else if(target === 10){
-
-                    counter.innerText = "10+";
+                    counter.innerText = `${target}+`;
 
                 }
 
-                else if(target === 5){
-
-                    counter.innerText = "5+";
-
-                }
-
-                else{
+                else {
 
                     counter.innerText = target;
 
                 }
 
             }
+
+
 
         };
 
@@ -121,11 +111,11 @@ const counterObserver = new IntersectionObserver((entries)=>{
 
     });
 
-},{
-    threshold:.5
+}, {
+    threshold: .5
 });
 
-counters.forEach(counter=>{
+counters.forEach(counter => {
 
     counterObserver.observe(counter);
 
