@@ -1813,16 +1813,58 @@ grid-template-columns:1fr;
 
     justify-content:center;
 
-    gap:20px;
+    align-items:center;
 
-    margin-top:50px;
+    gap:20px;
 
     flex-wrap:wrap;
 
+    margin-top:60px;
+
 }
 
-.footer-buttons a{
+.footer-btn{
 
-    min-width:220px;
+    display:flex;
 
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    min-width:240px;
+
+    padding:18px 28px;
+
+    font-size:1rem;
+
+    transition:.35s ease;
+
+}
+
+.footer-btn svg{
+
+    width:20px;
+
+    height:20px;
+
+}
+
+.footer-btn:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.github-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+}
+
+.github-btn svg{
+    width:20px;
+    height:20px;
 }

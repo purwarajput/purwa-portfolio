@@ -468,3 +468,34 @@ if (window.lucide) {
     lucide.createIcons();
 
 }
+
+/*=================================
+    OPEN GALLERY FROM URL
+=================================*/
+
+window.addEventListener("load", () => {
+
+    const params = new URLSearchParams(window.location.search);
+
+    const gallery = params.get("gallery");
+
+    if (!gallery) return;
+
+    const button = document.querySelector(
+        `.gallery-open[data-project="${gallery}"]`
+    );
+
+    if (button) {
+
+        button.click();
+
+        // Remove query parameter so refreshing doesn't reopen it
+        window.history.replaceState(
+            {},
+            document.title,
+            window.location.pathname
+        );
+
+    }
+
+});
