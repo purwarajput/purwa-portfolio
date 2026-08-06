@@ -775,7 +775,155 @@ and oversee the complete insurance workflow.
 
 
 
-    <section class="architecture"></section>
+    <section class="architecture-section">
+
+    <div class="case-container">
+
+        <span class="section-tag">
+            SYSTEM ARCHITECTURE
+        </span>
+
+        <h2 class="section-title">
+            Enterprise Architecture
+        </h2>
+
+        <p class="section-subtitle">
+            ClaimCore follows a layered architecture that separates presentation,
+            business logic, authentication, database access, and third-party services
+            for scalability and maintainability.
+        </p>
+
+       <div class="architecture-diagram">
+
+    <!-- USER -->
+
+    <div class="arch-row">
+
+        <div class="arch-card reveal" data-delay="0">
+
+            <i data-lucide="user"></i>
+
+            <h3>User</h3>
+
+        </div>
+
+    </div>
+
+    <div class="arch-line"></div>
+
+    <!-- FRONTEND -->
+
+    <div class="arch-row">
+
+        <div class="arch-card reveal" data-delay="100">
+
+            <i data-lucide="monitor-smartphone"></i>
+
+            <h3>Angular Frontend</h3>
+
+        </div>
+
+    </div>
+
+    <div class="arch-line"></div>
+
+    <!-- SERVICES -->
+
+    <div class="arch-services">
+
+        <div class="arch-card small reveal" data-delay="200">
+
+            <i data-lucide="shield-check"></i>
+
+            <h3>JWT Auth</h3>
+
+        </div>
+
+        <div class="arch-card small reveal" data-delay="300">
+
+            <i data-lucide="mail"></i>
+
+            <h3>Email Service</h3>
+
+        </div>
+
+    </div>
+
+    <div class="arch-line"></div>
+
+    <!-- BACKEND -->
+
+    <div class="arch-row">
+
+        <div class="arch-card reveal" data-delay="400">
+
+            <i data-lucide="server-cog"></i>
+
+            <h3>.NET REST APIs</h3>
+
+        </div>
+
+    </div>
+
+    <div class="arch-line"></div>
+
+    <!-- EF -->
+
+    <div class="arch-row">
+
+        <div class="arch-card reveal" data-delay="500">
+
+            <i data-lucide="layers"></i>
+
+            <h3>Entity Framework</h3>
+
+        </div>
+
+    </div>
+
+    <div class="arch-line"></div>
+
+    <!-- DATABASE -->
+
+    <div class="arch-row">
+
+        <div class="arch-card reveal" data-delay="600">
+
+            <i data-lucide="database"></i>
+
+            <h3>SQL Server</h3>
+
+        </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+
+    <div class="arch-bottom">
+
+        <div class="arch-card small reveal" data-delay="700">
+
+            <i data-lucide="credit-card"></i>
+
+            <h3>Razorpay</h3>
+
+        </div>
+
+        <div class="arch-card small reveal" data-delay="800">
+
+            <i data-lucide="users-round"></i>
+
+            <h3>Admin Portal</h3>
+
+        </div>
+
+    </div>
+
+</div>
+
+    </div>
+
+</section>
 
     <section class="features"></section>
 
