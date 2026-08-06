@@ -121,19 +121,21 @@
 
     gap: 22px;
 }
-.hero-buttons i{
 
-    width:20px;
-    height:20px;
+.hero-buttons i {
+
+    width: 20px;
+    height: 20px;
 
 }
-.hero-buttons a,
-.hero-buttons button{
 
-display:flex;
-align-items:center;
-justify-content:center;
-gap:12px;
+.hero-buttons a,
+.hero-buttons button {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
 
 }
 
@@ -410,32 +412,32 @@ gap:12px;
     overflow: hidden;
 
 }
-.feature-card::before{
 
-content:"";
+.feature-card::before {
 
-position:absolute;
+    content: "";
 
-left:0;
-top:0;
+    position: absolute;
 
-width:100%;
-height:4px;
+    left: 0;
+    top: 0;
 
-background:linear-gradient(
-90deg,
-#6C63FF,
-#28d7ff
-);
+    width: 100%;
+    height: 4px;
 
-transform:scaleX(0);
+    background: linear-gradient(90deg,
+            #6C63FF,
+            #28d7ff);
 
-transition:.4s;
+    transform: scaleX(0);
+
+    transition: .4s;
 
 }
-.feature-card:hover::before{
 
-transform:scaleX(1);
+.feature-card:hover::before {
+
+    transform: scaleX(1);
 
 }
 
@@ -482,14 +484,14 @@ transform:scaleX(1);
 }
 
 .step-icon svg,
-.feature-icon svg{
+.feature-icon svg {
 
-    width:40px;
-    height:40px;
+    width: 40px;
+    height: 40px;
 
-    stroke-width:2;
+    stroke-width: 2;
 
-    color:#6C63FF;
+    color: #6C63FF;
 
 }
 
@@ -532,5 +534,286 @@ transform:scaleX(1);
     content: "✔ ";
 
     color: #28d7ff;
+
+}
+
+.showcase-section {
+
+    padding: 140px 0;
+
+}
+
+.showcase-card {
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.5fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+    margin-top: 55px;
+
+    padding: 70px;
+
+    border-radius: 36px;
+
+    background: rgba(255, 255, 255, .03);
+
+    border: 1px solid rgba(255, 255, 255, .06);
+
+    transition: .4s;
+
+}
+
+.showcase-card:hover {
+
+    transform: translateY(-12px);
+
+}
+
+.showcase-card.reverse {
+
+    grid-template-columns: 1.5fr .9fr;
+
+}
+
+.showcase-card.reverse .showcase-text {
+
+    order: 2;
+
+}
+
+.showcase-card:hover img {
+
+    transform: scale(1.03);
+
+}
+
+.showcase-card.reverse .showcase-image {
+
+    order: 1;
+
+}
+
+.showcase-badge {
+
+    display: inline-block;
+
+    padding: 8px 16px;
+
+    border-radius: 40px;
+
+    background: rgba(40, 215, 255, .12);
+
+    color: #28d7ff;
+
+    font-size: .9rem;
+
+    font-weight: 600;
+
+    margin-bottom: 28px;
+
+}
+
+.showcase-number {
+
+    font-size: 7rem;
+
+    font-weight: 900;
+
+    color: transparent;
+
+    -webkit-text-stroke: 2px rgba(108, 99, 255, .35);
+
+    opacity: .9;
+
+}
+
+.showcase-tags {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 25px;
+
+    flex-wrap: wrap;
+
+}
+
+.showcase-tags span {
+
+    padding: 10px 18px;
+
+    border-radius: 40px;
+
+    background: #171d2c;
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+}
+
+.showcase-image {
+
+    transition: .5s ease;
+    position: relative;
+    isolation: isolate;
+
+}
+
+.showcase-card:hover .showcase-image::before {
+
+    opacity: .75;
+
+    transform:
+
+        translate(-50%, -50%) scale(1.25);
+
+}
+
+
+.showcase-text h3 {
+
+    font-size: 2.4rem;
+
+    color: white;
+
+    margin-bottom: 20px;
+
+}
+
+.showcase-browser img {
+    transition: .6s;
+}
+
+.showcase-text p {
+
+    font-size: 1.1rem;
+
+    line-height: 2;
+
+    color: #b7bfd3;
+
+}
+
+.showcase-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    width:900px;
+    height:900px;
+
+    transform:translate(-50%,-50%);
+
+    background:
+        radial-gradient(circle,
+        rgba(108,99,255,.8) 0%,
+        rgba(108,99,255,.35) 35%,
+        rgba(40,215,255,.18) 55%,
+        transparent 72%);
+
+    filter:blur(120px);
+
+    opacity:.65;
+
+    z-index:0;
+
+    pointer-events:none;
+
+    transition:.6s;
+
+}
+
+.showcase-image::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:15%;
+
+    border-radius:50%;
+
+    background:#6C63FF;
+
+    filter:blur(70px);
+
+    opacity:.25;
+
+    z-index:0;
+
+}
+
+
+.showcase-browser {
+
+    display: block;
+
+    text-decoration: none;
+
+}
+
+.browser-frame {
+
+    transition: .45s,
+    box-shadow .45s;
+    position: relative;
+    z-index: 2;
+}
+
+.showcase-card:hover .browser-frame {
+
+    transform: 
+    translateY(-12px)
+    rotate(-1deg);
+
+}
+
+.showcase-browser:hover {
+
+    cursor: pointer;
+
+}
+
+.showcase-card.reverse {
+    grid-template-columns: 1.2fr 1fr;
+}
+
+.showcase-card.reverse .showcase-text {
+    order: 2;
+}
+
+.showcase-card.reverse .showcase-image {
+    order: 1;
+}
+
+/*==============================
+      SCROLL REVEAL
+==============================*/
+
+.reveal {
+
+    opacity: 0;
+
+    transform: translateY(80px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.reveal.active {
+
+    opacity: 1;
+
+    transform: translateY(0);
 
 }
