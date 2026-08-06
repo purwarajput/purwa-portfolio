@@ -1141,6 +1141,12 @@
 
 }
 
+.tech-stack-section{
+
+    padding:120px 0;
+
+}
+
 .tech-grid {
 
     display: grid;
@@ -1155,7 +1161,7 @@
 
 .tech-card {
 
-    background: rgba(255, 255, 255, .03);
+    background: rgba(255, 255, 255, .04);
 
     border: 1px solid rgba(255, 255, 255, .08);
 
@@ -1246,12 +1252,23 @@
     color: #6C63FF;
 
 }
+.tech-icon i{
+
+    width:34px;
+
+    height:34px;
+
+    color:#6C63FF;
+
+}
 
 .tech-card h3 {
 
     color: white;
 
     margin-bottom: 28px;
+
+    font-size:1.3rem;
 
 }
 
@@ -1278,6 +1295,62 @@
     font-size: .9rem;
 
 }
+
+.tech-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+.tech-tags span{
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#d8def5;
+
+    font-size:.92rem;
+
+    transition:.3s;
+
+}
+.tech-tags span:hover{
+
+    background:#6C63FF;
+
+    color:#fff;
+
+    transform:translateY(-2px);
+
+}
+
+@media(max-width:1000px){
+
+.tech-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+@media(max-width:768px){
+
+.tech-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
 
 /*==============================
       CHALLENGES
