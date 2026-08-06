@@ -685,155 +685,110 @@
 
 
 
-    <section class="architecture-section">
+   <section class="architecture-section reveal">
 
-        <div class="case-container">
+    <div class="case-container">
 
-            <span class="section-tag">
-                SYSTEM ARCHITECTURE
-            </span>
+        <span class="section-tag">
+            SYSTEM ARCHITECTURE
+        </span>
 
-            <h2 class="section-title">
-                Enterprise Architecture
-            </h2>
+        <h2 class="section-title">
+            How ThinkStack Works
+        </h2>
 
-            <p class="section-subtitle">
-                ClaimCore follows a layered architecture that separates presentation,
-                business logic, authentication, database access, and third-party services
-                for scalability and maintainability.
-            </p>
+        <p class="section-subtitle">
+            ThinkStack uses a modern AI architecture powered by
+            Clerk Authentication, Next.js Server Components,
+            OpenRouter API and multiple Large Language Models.
+        </p>
 
-            <div class="architecture-diagram">
 
-                <!-- USER -->
+        <div class="architecture-tree">
 
-                <div class="arch-row">
+            <!-- USER -->
 
-                    <div class="arch-card reveal" data-delay="0">
+            <div class="arch-node">
+                <i data-lucide="user-round"></i>
+                <h3>User</h3>
+            </div>
 
-                        <i data-lucide="user"></i>
+            <div class="vertical-line"></div>
 
-                        <h3>User</h3>
+            <!-- CLERK -->
 
-                    </div>
+            <div class="arch-node">
+                <i data-lucide="shield-check"></i>
+                <h3>Clerk Authentication</h3>
+            </div>
 
-                </div>
+            <div class="vertical-line"></div>
 
-                <div class="arch-line"></div>
+            <!-- NEXT -->
 
-                <!-- FRONTEND -->
+            <div class="arch-node large">
+                <i data-lucide="layers-3"></i>
+                <h3>Next.js Application</h3>
+            </div>
 
-                <div class="arch-row">
+            <div class="vertical-line"></div>
 
-                    <div class="arch-card reveal" data-delay="100">
+            <!-- SERVICES -->
 
-                        <i data-lucide="monitor-smartphone"></i>
+            <div class="services-row">
 
-                        <h3>Angular Frontend</h3>
+                <div class="arch-node">
 
-                    </div>
+                    <i data-lucide="bot"></i>
 
-                </div>
-
-                <div class="arch-line"></div>
-
-                <!-- SERVICES -->
-
-                <div class="arch-services">
-
-                    <div class="arch-card small reveal" data-delay="200">
-
-                        <i data-lucide="shield-check"></i>
-
-                        <h3>JWT Auth</h3>
-
-                    </div>
-
-                    <div class="arch-card small reveal" data-delay="300">
-
-                        <i data-lucide="mail"></i>
-
-                        <h3>Email Service</h3>
-
-                    </div>
+                    <h3>OpenRouter API</h3>
 
                 </div>
 
-                <div class="arch-line"></div>
+                <div class="arch-node">
 
-                <!-- BACKEND -->
+                    <i data-lucide="database"></i>
 
-                <div class="arch-row">
-
-                    <div class="arch-card reveal" data-delay="400">
-
-                        <i data-lucide="server-cog"></i>
-
-                        <h3>.NET REST APIs</h3>
-
-                    </div>
+                    <h3>PostgreSQL</h3>
 
                 </div>
 
-                <div class="arch-line"></div>
+            </div>
 
-                <!-- EF -->
+            <div class="vertical-line short"></div>
 
-                <div class="arch-row">
+            <!-- MODELS -->
 
-                    <div class="arch-card reveal" data-delay="500">
+            <div class="models-row">
 
-                        <i data-lucide="layers"></i>
-
-                        <h3>Entity Framework</h3>
-
-                    </div>
-
+                <div class="arch-node small">
+                    <i data-lucide="sparkles"></i>
+                    <h3>GPT-4o</h3>
                 </div>
 
-                <div class="arch-line"></div>
-
-                <!-- DATABASE -->
-
-                <div class="arch-row">
-
-                    <div class="arch-card reveal" data-delay="600">
-
-                        <i data-lucide="database"></i>
-
-                        <h3>SQL Server</h3>
-
-                    </div>
-
+                <div class="arch-node small">
+                    <i data-lucide="brain"></i>
+                    <h3>Claude</h3>
                 </div>
 
-                <!-- BOTTOM -->
+                <div class="arch-node small">
+                    <i data-lucide="stars"></i>
+                    <h3>Gemini</h3>
+                </div>
 
-                <div class="arch-bottom">
-
-                    <div class="arch-card small reveal" data-delay="700">
-
-                        <i data-lucide="credit-card"></i>
-
-                        <h3>Razorpay</h3>
-
-                    </div>
-
-                    <div class="arch-card small reveal" data-delay="800">
-
-                        <i data-lucide="users-round"></i>
-
-                        <h3>Admin Portal</h3>
-
-                    </div>
-
+                <div class="arch-node small">
+                    <i data-lucide="cpu"></i>
+                    <h3>DeepSeek</h3>
                 </div>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
+
 
     <section class="tech-section">
 

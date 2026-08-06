@@ -1868,3 +1868,217 @@ grid-template-columns:1fr;
     width:20px;
     height:20px;
 }
+
+/*=====================================
+        THINKSTACK ARCHITECTURE
+======================================*/
+
+.architecture-tree{
+
+    margin-top:80px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.vertical-line{
+
+    width:2px;
+
+    height:55px;
+
+    background:linear-gradient(#6C63FF,#24d7ff);
+
+}
+
+.vertical-line.short{
+
+    height:40px;
+
+}
+
+.arch-node{
+
+    width:260px;
+
+    padding:28px;
+
+    border-radius:22px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(16px);
+
+    transition:.35s;
+
+}
+
+.arch-node:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#6C63FF;
+
+    box-shadow:0 25px 60px rgba(108,99,255,.18);
+
+}
+
+.arch-node.large{
+
+    width:340px;
+
+}
+
+.arch-node.small{
+
+    width:180px;
+
+    padding:22px;
+
+}
+
+.arch-node i{
+
+    width:42px;
+
+    height:42px;
+
+    color:#6C63FF;
+
+    margin-bottom:16px;
+
+}
+
+.arch-node h3{
+
+    color:#fff;
+
+    font-size:1.15rem;
+
+    margin-bottom:10px;
+
+}
+
+.arch-node p{
+
+    color:#9EA7C0;
+
+    line-height:1.7;
+
+}
+
+.services-row{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:80px;
+
+    position:relative;
+
+}
+
+.services-row::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-28px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:320px;
+
+    height:2px;
+
+    background:linear-gradient(to right,#6C63FF,#24d7ff);
+
+}
+
+.models-row{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:28px;
+
+    flex-wrap:wrap;
+
+    position:relative;
+
+}
+
+.models-row::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-22px;
+
+    left:12%;
+
+    width:76%;
+
+    height:2px;
+
+    background:linear-gradient(to right,#6C63FF,#24d7ff);
+
+}
+
+@media(max-width:900px){
+
+.services-row{
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:35px;
+
+}
+
+.services-row::before{
+
+    display:none;
+
+}
+
+.models-row{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.models-row::before{
+
+    display:none;
+
+}
+
+.arch-node{
+
+    width:100%;
+
+    max-width:330px;
+
+}
+
+}
