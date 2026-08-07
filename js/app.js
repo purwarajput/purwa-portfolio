@@ -83,3 +83,78 @@ window.addEventListener("scroll", () => {
     });
 
 });
+
+/*=================================
+        EMAIL JS
+=================================*/
+
+emailjs.init("0oEo1KPfH7iAGN-EK");
+
+const form = document.getElementById("contact-form");
+
+if (form) {
+
+    form.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        const button = form.querySelector("button");
+
+        const originalText = button.innerHTML;
+
+        button.disabled = true;
+
+        button.innerHTML = `
+            <i data-lucide="loader-circle"></i>
+            Sending...
+        `;
+
+        lucide.createIcons();
+
+        emailjs.sendForm(
+            "service_dy1gv7o",
+            "template_v6ateu7",
+            this
+        )
+        .then(() => {
+
+            button.innerHTML = `
+                <i data-lucide="check"></i>
+                Message Sent
+            `;
+
+            lucide.createIcons();
+
+            alert("✅ Thank you! Your message has been sent successfully.");
+
+            form.reset();
+
+        })
+        .catch((error) => {
+
+            console.error(error);
+
+            alert("❌ Failed to send message. Please try again.");
+
+        })
+        .finally(() => {
+
+            setTimeout(() => {
+
+                button.disabled = false;
+
+                button.innerHTML = originalText;
+
+                lucide.createIcons();
+
+            }, 2000);
+
+        });
+
+    });
+
+}
+
+
+
+       
