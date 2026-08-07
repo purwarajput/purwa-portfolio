@@ -2430,3 +2430,304 @@ grid-template-columns:1fr;
 
 }
 
+/*======================================
+            CONTACT
+======================================*/
+
+.contact-section{
+
+padding:120px 8%;
+
+background:#0B1120;
+
+}
+
+.contact-wrapper{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:60px;
+
+margin-top:70px;
+
+}
+
+.contact-info{
+
+background:rgba(255,255,255,.04);
+
+border:1px solid rgba(255,255,255,.08);
+
+padding:45px;
+
+border-radius:24px;
+
+}
+
+.contact-info h3{
+
+font-size:2rem;
+
+margin-bottom:18px;
+
+color:#fff;
+
+}
+
+.contact-info p{
+
+color:#A9B1C7;
+
+line-height:1.8;
+
+}
+
+.contact-item{
+
+display:flex;
+
+gap:18px;
+
+margin-top:35px;
+
+align-items:flex-start;
+
+}
+
+.contact-item i{
+
+width:52px;
+
+height:52px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+border-radius:14px;
+
+background:#6C63FF;
+
+color:#fff;
+
+}
+
+.contact-item span{
+
+display:block;
+
+font-size:.9rem;
+
+color:#8F96B2;
+
+margin-bottom:6px;
+
+}
+
+.contact-item a,
+.contact-item p{
+
+color:#fff;
+
+text-decoration:none;
+
+}
+
+.social-links{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:40px;
+
+}
+
+.social-links a{
+
+    width:58px;
+
+    height:58px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#fff;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+.social-links a:hover{
+
+    background:#6C63FF;
+
+    transform:translateY(-6px) scale(1.08);
+
+    box-shadow:0 12px 30px rgba(108,99,255,.35);
+
+}
+
+.contact-form{
+
+background:rgba(255,255,255,.04);
+
+border:1px solid rgba(255,255,255,.08);
+
+padding:45px;
+
+border-radius:24px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+padding:18px;
+
+border-radius:14px;
+
+color:#fff;
+
+font-size:1rem;
+
+outline:none;
+
+}
+
+.contact-form textarea{
+
+resize:none;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+border-color:#6C63FF;
+
+}
+
+@media(max-width:900px){
+
+.contact-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+}
+/*==============================
+      RESUME DOWNLOADS
+==============================*/
+
+.resume-downloads{
+
+    margin-top:45px;
+
+}
+
+.resume-downloads h4{
+
+    color:#fff;
+
+    margin-bottom:20px;
+
+    font-size:1.1rem;
+
+}
+
+.resume-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:18px 20px;
+
+    margin-bottom:16px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#fff;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+.resume-btn>div{
+
+    flex:1;
+
+}
+
+.resume-btn strong{
+
+    display:block;
+
+    font-size:1rem;
+
+    margin-bottom:4px;
+
+}
+
+.resume-btn small{
+
+    color:#9CA3AF;
+
+    font-size:.82rem;
+
+}
+
+.resume-btn:hover{
+
+    background:#6C63FF;
+
+    border-color:#6C63FF;
+
+    transform:translateX(8px);
+
+    box-shadow:0 18px 40px rgba(108,99,255,.30);
+
+}
+
+.resume-btn svg{
+
+    width:22px;
+
+    height:22px;
+
+}
