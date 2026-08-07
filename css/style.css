@@ -2283,3 +2283,150 @@ grid-template-columns:1fr;
     pointer-events: none;
 
 }
+
+/*======================================
+        TECHNICAL EXPERTISE
+======================================*/
+
+.skills-section{
+
+    padding:120px 8%;
+
+    background:#0b1120;
+
+}
+
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.skill-card{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:35px;
+
+    transition:.4s;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:#6C63FF;
+
+    box-shadow:0 25px 60px rgba(108,99,255,.25);
+
+}
+
+.skill-icon{
+
+    width:72px;
+
+    height:72px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    background:linear-gradient(135deg,#6C63FF,#8E85FF);
+
+}
+
+.skill-icon svg{
+
+    width:34px;
+
+    height:34px;
+
+    color:#fff;
+
+}
+
+.skill-card h3{
+
+    color:#fff;
+
+    font-size:1.4rem;
+
+    margin-bottom:10px;
+
+}
+
+.skill-label{
+
+    display:inline-block;
+
+    margin-bottom:22px;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    background:rgba(108,99,255,.12);
+
+    color:#9B95FF;
+
+    font-weight:600;
+
+    font-size:.88rem;
+
+}
+
+.skill-list{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+.skill-list span{
+
+    padding:10px 16px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#D7DCEF;
+
+    font-size:.92rem;
+
+    transition:.3s;
+
+}
+
+.skill-list span:hover{
+
+    background:#6C63FF;
+
+    border-color:#6C63FF;
+
+    transform:translateY(-3px);
+
+    color:#fff;
+
+}
+
