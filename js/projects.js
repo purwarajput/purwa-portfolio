@@ -481,21 +481,27 @@ window.addEventListener("load", () => {
 
     if (!gallery) return;
 
-    const button = document.querySelector(
-        `.gallery-open[data-project="${gallery}"]`
-    );
+    // Wait until page has finished rendering
+    setTimeout(() => {
 
-    if (button) {
-
-        button.click();
-
-        // Remove query parameter so refreshing doesn't reopen it
-        window.history.replaceState(
-            {},
-            document.title,
-            window.location.pathname
+        const button = document.querySelector(
+            `.gallery-open[data-project="${gallery}"]`
         );
 
-    }
+        if (button) {
+
+            button.click();
+
+            history.replaceState(
+                {},
+                document.title,
+                "index.html#projects"
+            );
+
+        }
+
+    }, 300);
 
 });
+
+
