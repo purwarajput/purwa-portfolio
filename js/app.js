@@ -112,7 +112,7 @@ if (form) {
         lucide.createIcons();
 
         emailjs.sendForm(
-            "service_dy1gv7o",
+            "service_jbdu4vb",
             "template_v6ateu7",
             this
         )
@@ -132,11 +132,12 @@ if (form) {
         })
         .catch((error) => {
 
-            console.error(error);
+    console.log("EmailJS Error:", error);
 
-            alert("❌ Failed to send message. Please try again.");
+    alert(error.text || JSON.stringify(error));
 
-        })
+})
+
         .finally(() => {
 
             setTimeout(() => {
